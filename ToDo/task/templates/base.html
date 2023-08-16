@@ -1,0 +1,21 @@
+{% load static %}
+<!--com isso o django pode carregar arquivos staticos-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!--Utilizando essa função vc pode usalas em um novo modelo sem codar o inicial-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <p>Barra de navegação</p>
+    {% block content %} 
+    <!--Utilizando essa função vc pode usalas em um novo modelo sem codar o inicial-->
+    {% endblock %}
+    <p>Rodapé da pagina</p>
+    <script src="{% static 'js/scripts.js' %}"></script>    
+</body>
+</html>
