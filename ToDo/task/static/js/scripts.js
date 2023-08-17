@@ -1,1 +1,1 @@
-cosole.log('Funcionou!')
+console.log('Funcionou!');
